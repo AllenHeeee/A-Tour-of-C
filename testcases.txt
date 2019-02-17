@@ -1,0 +1,154 @@
+1. Always add to front
+input:"aand, aAnd, Aand, AAnd"
+output:
+AAnd
+Aand
+aAnd
+aand
+
+
+2.Always add to end
+input:"AAnd Aand aAnd aand"
+output:
+AAnd
+Aand
+aAnd
+aand
+
+
+3.Empty input
+input:""
+output:
+
+
+4.non-letter inputs
+input:"@#$%^&*()_+ @#$%^&*()_+ @#$%^&*()_+"
+output:
+
+
+5. "space" input
+input:"       "
+output:
+
+Random test cases
+6. input:"AA AAnd AAn"
+    output:
+    AAnd
+    AAn
+    AA
+    
+7. input:"asdasd asd asdasd?"
+    output:
+    asdasd
+    asdasd
+    asd
+
+
+8. input:"asdfghjklasdfghjklasdfghjklasdfghjklasdfghjklqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop"
+    output:
+    asdfghjklasdfghjklasdfghjklasdfghjklasdfghjklqwertyuiopqwertyuiopqwertyuiopqwertyuiopqwertyuiop
+
+
+
+9. input:"AAnd AA AAn"
+    output:
+    AAnd
+    AAn
+    AA
+
+
+10. input:"AA(AAn(AAnd???????"
+    output:
+    AAnd
+    AAn
+    AA
+
+
+11. input:"AAn,AA,AAnd"
+    output:
+    AAnd
+    AAn
+    AA
+
+
+12. input:"AAn/AAnd/AA"
+    output:
+    AAnd
+    AAn
+    AA
+
+
+13. input:"0123456789"
+    output:""
+
+
+14. input:"abc abc abc abc        "
+    output:
+    abc
+    abc
+    abc
+    abc
+
+
+15. input:"ccccc aaaa Cccc @#$%^&*()bbbb cccc  "
+    output:
+    Cccc
+    ccccc
+    cccc
+    bbbb
+    aaaa
+
+
+16. input:"zounds zoo marmosets march energetically"
+    output:
+    zounds
+    zoo
+    marmosets
+    march
+    energetically
+
+
+17. input:"marmosets march zoo zounds energetically"
+    output:
+    zounds
+    zoo
+    marmosets
+    march
+    energetically
+
+
+18. input:"    energetically march marmosets zoo zounds                  "
+    output:
+    zounds
+    zoo
+    marmosets
+    march
+    energetically
+
+
+19. input:"a b c  C A B  D E F G H d e f g h L K J I i j k l   "
+    output:
+    L
+    K
+    J
+    I
+    H
+    G
+    F
+    E
+    D
+    C
+    B
+    A
+    l
+    k
+    j
+    i
+    h
+    g
+    f
+    e
+    d
+    c
+    b
+    a
